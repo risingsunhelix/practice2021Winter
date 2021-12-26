@@ -1,0 +1,10 @@
+.c-sectionImage--companyProfile{
+  background-image: url(img/companyProfileSi.jpg);
+  background-size: cover;
+  @include size(100vw, 250px)
+  filter:grayscale(20%);
+}
+.c-sectionImage--companyProfile:hover{
+  transition: 800ms;
+  filter:grayscale(0%);
+}

@@ -1,0 +1,48 @@
+.l-section--services, .l-section--contact{
+  background-color:$bgNaivy;
+}
+.l-section--top{
+  background-image: url(img/faceRecognition.jpg);
+  background-size: cover;
+  background-position: center;
+  @include size(100vw, 471px)
+}
+
+.l-section--corporateSales__system{
+  background-image: url(img/faceRecognition-zoom.jpg);
+  background-size: cover;
+  @include size(100vw, 300px)
+  background-position: right;
+}
+.l-section--corporateSales__procedure{
+  background-image: url(img/faceRecognitionAndMan.jpg);
+  background-size: cover;
+  @include size(100vw, 300px)
+  background-position: left;
+}
+.l-section--apparel__about{
+  background-image: url(img/apparel.jpg);
+  background-size: cover;
+  @include size(100vw, 471px)
+}
+.l-section--photoLibrary{
+  background-image: url(img/photoLibraryBg.jpg);
+  background-size: cover;
+}
+.l-section--recruit__about{
+  background-image: url(img/recruitBg.jpg);
+  background-size: cover;
+}
+.l-section--companyProfileSub{
+  background-image: url(img/companyprofileSub.jpg);
+  background-size: cover;
+}
+.l-section--companyOverview{
+  background-color:rgba(0,0,0,0.2);
+}
+.l-section--companyHistory{
+  background-color:rgba(0,0,0,0.2);
+}
+.l-section--pressReleaseSub{
+  width:100vw;
+}

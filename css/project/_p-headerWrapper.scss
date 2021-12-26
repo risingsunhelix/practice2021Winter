@@ -1,0 +1,22 @@
+.p-headerWrapperSub{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+  }
+.p-headerWrapperSub--content{
+  background-color: rgba(255,255,255,0.7);
+}
+.p-headerWrapperSub--contentRecruit{
+  background-color: rgba(0,0,0,0.7);
+}
+@media (max-width:$lg){
+  .p-headerWrapper{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+  }
+}
+.p-headerWrapper.js-bgBlack{
+  background-color: rgba(0,0,0,0.2);
+  transition: all 800ms;
+}

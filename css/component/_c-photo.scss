@@ -1,0 +1,34 @@
+.c-photo{
+  @include size(250px, 200px)
+  @include boxShadow( $r:255, $g:255, $b:255, $a:0.2)
+}
+.c-photo:hover{
+  opacity:0.8;
+}
+.c-photo--specialist,.c-photo--qAndA{
+  width:80%;
+  height:150px;
+  object-fit: cover;
+  object-position: 100% 100%;
+  @include boxShadow( $r:0, $g:0, $b:0, $a:0.2)
+}
+.c-photo--agreement{
+  width:80%;
+  height:150px;
+  object-fit: cover;
+  object-position: 100% 100%;
+  @include boxShadow( $r:0, $g:0, $b:0, $a:0.2)
+}
+
+@media (max-width:$md){
+  .c-photo--specialist,.c-photo--qAndA{
+    width:80%;
+    height:150px;
+
+  }
+  .c-photo--agreement{
+    width:80%;
+    height:150px;
+
+  }
+}

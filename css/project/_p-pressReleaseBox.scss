@@ -1,0 +1,31 @@
+.p-pressReleaseBox{
+  display: flex;
+  align-items:center;
+  justify-content:space-around;
+  border-bottom: 1px #666666 solid;
+  cursor: pointer;
+}
+
+.p-pressReleaseBox__dateCategory{
+  display: flex;
+  align-items:center;
+  justify-content:space-around;
+  width:35%;
+}
+
+@media (max-width:$lg){
+  .p-pressReleaseBox{
+    display: flex;
+    align-items:center;
+    justify-content:space-around;
+    flex-direction: column;
+  }
+  .p-pressReleaseBox__dateCategory{
+    display: flex;
+    align-items:center;
+    justify-content:space-around;
+    width:70%;
+    margin:auto;
+  }
+
+}

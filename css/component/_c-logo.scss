@@ -1,0 +1,71 @@
+.c-logo--update{
+  width:150px;
+  cursor:pointer;
+}
+.c-logo--update:hover{
+  opacity: 0.8;
+  transition:all 400ms;
+}
+.c-logo--updateSub{
+  width:100px;
+  cursor:pointer;
+}
+.c-logo--updateSub:hover{
+  opacity: 0.8;
+  transition:all 400ms;
+}
+
+.c-logo--update.js-colorNaivy{
+  @include fontInformation($size:34px, $weight:bold,$lineHeight:1, $color:rgba(4,4,62,0.4))
+  transition:all 400ms;
+}
+
+
+.c-logo--youtube, .c-logo--facebook, .c-logo--twitter, .c-logo--instagram{
+  width:30px;
+  cursor:pointer;
+}
+.c-logo:hover{
+  opacity: 0.8;
+  transition:all 400ms;
+}
+.c-logo--myNavi{
+  width:200px;
+  @include boxShadow( $r:255, $g:255, $b:255, $a:0.2)
+}
+.c-logo--myNaviTop{
+  width:200px;
+  height:50px;
+  object-fit: cover;
+  object-position: 100% 100%;
+  @include boxShadow( $r:255, $g:255, $b:255, $a:0.2)
+}
+
+
+//responsive//
+@media (max-width:$lg){
+  .c-logo--update,.c-logo--updateSub{
+    width:70px;
+  }
+  .c-logo--myNavi{
+    width:150px;
+
+
+  }
+}
+@media (max-width:$lg){
+  .c-logo--myNaviTop{
+  width:150px;
+  height:40px;
+}
+}
+@media (max-width:$sm){
+  .c-logo--update,.c-logo--updateSub{
+    width:60px;
+  }
+  .c-logo--myNavi{
+    width:100px;
+
+
+  }
+}

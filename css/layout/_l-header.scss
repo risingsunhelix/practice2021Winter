@@ -1,0 +1,30 @@
+.l-header{
+  @include size(100vw,230px)
+  position: relative;
+  z-index: 20;
+  background-color: #000000;
+}
+.l-headerSub{
+  @include size(100vw,100px)
+  position: relative;
+  z-index: 20;
+
+}
+
+@media (max-width:$lg){
+  .l-header{
+    height: 70px;
+  }
+  .l-headerSub{
+    height: 70px;
+  }
+}
+
+@media (max-width:$sm){
+  .l-header{
+    height:60px;
+  }
+  .l-headerSub{
+    height:60px;
+  }
+}

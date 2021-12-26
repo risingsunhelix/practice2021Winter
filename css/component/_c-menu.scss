@@ -1,0 +1,139 @@
+.c-menu{
+  @include fontInformation($size:14px, $weight:regular,$lineHeight:1, $color:rgba(255,255,255,0.8))
+  @include txtShadow(3px, 3px, 5px, $r:255, $g:255, $b:255, $a:0.3)
+  cursor: pointer;
+  position:relative;
+  width:120px;
+  text-align: center;
+}
+
+.c-menu::after{
+  position: absolute;
+  top:20px;
+  left:0px;
+  width:120px;
+  text-align: center;
+  @include fontInformation($size:9px, $weight:regular,$lineHeight:1.2, $color:rgba(255,255,255,0.8))
+}
+
+.c-menu--companyProfile::after{
+  content:"Company Profile";
+}
+.c-menu--corporateSales{
+  width:130px;
+}
+.c-menu--corporateSales::after{
+  content:"Corporate Sales Division";
+  width:130px;
+}
+.c-menu--apparel::after{
+  content:"Aparrel Division";
+
+}
+.c-menu--pressRelease::after{
+  content:"Press Release";
+}
+.c-menu--recruit::after{
+  content:"Recruit";
+}
+.c-menu--contact{
+  
+  width:100px;
+}
+.c-menu--contact::after{
+  content:"Contact";
+  width:100px;
+}
+
+.c-menu:hover{
+  @include fontInformation($size:15px, $weight:regular,$lineHeight:1, $color:rgba(4,4,62,0.4))
+  @include txtShadow(3px, 3px, 5px, $r:255, $g:255, $b:255, $a:0.8)
+  transition:all 400ms;
+  &::after{
+    @include fontInformation($size:9px, $weight:regular,$lineHeight:1, $color:rgba(4,4,62,0.4))
+    @include txtShadow(3px, 3px, 5px, $r:255, $g:255, $b:255, $a:0.8)
+    transition:all 400ms;
+  }
+}
+
+
+
+.c-menuSlide{
+  @include fontInformation($size:14px, $weight:regular,$lineHeight:1, $color:rgba(255,255,255,0.8))
+  @include txtShadow(3px, 3px, 5px, $r:255, $g:255, $b:255, $a:0.3)
+  cursor: pointer;
+  position:relative;
+  width:150px;
+  text-align: center;
+}
+
+
+.c-menuSlide::after{
+  position: absolute;
+  top:20px;
+  left:0px;
+  @include fontInformation($size:9px, $weight:regular,$lineHeight:1.2, $color:rgba(255,255,255,0.8))
+}
+.c-menuSlide:hover{
+  @include fontInformation($size:14px, $weight:regular,$lineHeight:1, $color:rgba(4,4,62,0.4))
+  @include txtShadow(3px, 3px, 5px, $r:255, $g:255, $b:255, $a:0.8)
+  transition:all 400ms;
+  &::after{
+    @include fontInformation($size:9px, $weight:regular,$lineHeight:1, $color:rgba(4,4,62,0.4))
+    @include txtShadow(3px, 3px, 5px, $r:255, $g:255, $b:255, $a:0.8)
+    transition:all 400ms;
+  }
+}
+
+.c-menuSlide--companyProfile::after{
+  content:"Company Profile";
+  width:150px;
+    text-align: center;
+}
+.c-menuSlide--corporateSales::after{
+  content:"Corporate Sales Division";
+    width:150px;
+    text-align: center;
+}
+.c-menuSlide--apparel::after{
+  content:"Aparrel Division";
+  width:150px;
+  text-align: center;
+}
+.c-menuSlide--pressRelease::after{
+  content:"Press Release";
+  width:150px;
+  text-align: center;
+}
+.c-menuSlide--recruit::after{
+  content:"Recruit";
+  width:150px;
+    text-align: center;
+}
+
+.c-menuSlide--contact::after{
+  content:"Contact";
+  width:150px;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+@media (max-width:$sm){
+  .c-menuSlide{
+    @include fontInformation($size:18px, $weight:regular,$lineHeight:1, $color:rgba(255,255,255,0.8))
+    @include txtShadow(3px, 3px, 5px, $r:255, $g:255, $b:255, $a:0.3)
+    cursor: pointer;
+  }
+  .c-menuSlide:hover{
+    @include fontInformation($size:20px, $weight:regular,$lineHeight:1, $color:rgba(4,4,62,0.4))
+    @include txtShadow(3px, 3px, 5px, $r:255, $g:255, $b:255, $a:0.8)
+    transition:all 400ms;
+  }
+
+}

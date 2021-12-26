@@ -1,0 +1,157 @@
+.c-text{
+  @include fontInformation($size:15px, $color:rgba(255,255,255,0.8))
+  @include txtShadow($x:3px, $y:3px, $blur:5px, $r:255, $g:255, $b:255, $a:0.2)
+}
+.c-text--black{
+  @include fontInformation($size:15px, $color:rgba(0,0,0,0.8))
+  @include txtShadow($x:3px, $y:3px, $blur:5px, $r:0, $g:0, $b:0, $a:0.2)
+}
+.c-text--blue{
+  @include fontInformation($size:15px, $color:rgba(0,0,134,0.8))
+  @include txtShadow($x:3px, $y:3px, $blur:5px, $r:0, $g:0, $b:134, $a:0.2)
+}
+
+.c-text--link{
+  @include fontInformation($size:15px, $color:rgba(0,0,134,0.8))
+  cursor: pointer;
+}
+.c-text--pressRelease{
+  @include fontInformation($size:14px, $color:rgba(0,0,0,0.8))
+  @include txtShadow($x:3px, $y:3px, $blur:5px, $r:0, $g:0, $b:0, $a:0.2)
+  display: inline-block;
+  width:60%;
+}
+.c-text--date{
+  @include fontInformation($size:14px, $color:rgba(0,0,0,0.8), $weight:normal)
+  @include txtShadow($x:3px, $y:3px, $blur:5px, $r:0, $g:0, $b:0, $a:0.2)
+}
+
+.c-list--contentTitle{
+  @include fontInformation($size:12px, $color:rgba(0,0,0,0.8), $weight:normal)
+  @include txtShadow($x:3px, $y:3px, $blur:5px, $r:0, $g:0, $b:0, $a:0.2)
+  cursor:pointer;
+}
+.c-text--pageTitle{
+  @include fontInformation($size:14px, $weight:regular,$lineHeight:1, $color:rgba(0,0,0,0.8))
+  @include txtShadow(3px, 3px, 5px, $r:0, $g:0, $b:0, $a:0.3)
+  cursor: pointer;
+  position:relative;
+}
+.c-text--pageContent{
+  @include fontInformation($size:14px, $weight:regular,$lineHeight:1, $color:rgba(0,0,0,0.8))
+  @include txtShadow(3px, 3px, 5px, $r:0, $g:0, $b:0, $a:0.3)
+  cursor: pointer;
+  position:relative;
+}
+.c-list--sectionTitle{
+  @include fontInformation($size:12px, $color:rgba(0,0,0,0.8), $weight:bold)
+  @include txtShadow($x:3px, $y:3px, $blur:5px, $r:0, $g:0, $b:0, $a:0.2)
+  cursor:pointer;
+}
+.c-list--sectionTitleBtn{
+  @include fontInformation($size:12px, $color:rgba(0,0,0,0.8), $weight:bold)
+  @include txtShadow($x:3px, $y:3px, $blur:5px, $r:0, $g:0, $b:0, $a:0.2)
+  cursor:pointer;
+  font-weight: bold;
+  border-top:1px dotted black;
+  line-height:1.5;
+  text-align: left;
+  padding-left: 30px;
+}
+.c-text--titlePage{
+  @include fontInformation($size:14px, $color:rgba(0,0,0,0.8), $weight:bold)
+  @include txtShadow($x:3px, $y:3px, $blur:5px, $r:0, $g:0, $b:0, $a:0.2)
+  cursor:pointer;
+
+  line-height:1.5;
+  text-align: left;
+  padding-left: 30px;
+}
+.c-text--titleContent{
+  @include fontInformation($size:14px, $color:rgba(0,0,0,0.8), $weight:normal)
+  @include txtShadow($x:3px, $y:3px, $blur:5px, $r:0, $g:0, $b:0, $a:0.2)
+  cursor:pointer;
+  border-top:1px dotted black;
+  line-height:1.5;
+  text-align: left;
+  padding-left: 30px;
+}
+.c-text--titleContentWhite{
+  @include fontInformation($size:14px, $color:rgba(255,255,255,0.8), $weight:normal)
+  @include txtShadow($x:3px, $y:3px, $blur:5px, $r:0, $g:0, $b:0, $a:0.2)
+  cursor:pointer;
+  border-top:1px dotted rgba(255,255,255,0.8);
+  line-height:1.5;
+  text-align: left;
+  padding-left: 30px;
+}
+
+
+.c-list--sectionTitleBtn:hover{
+  text-decoration: underline;
+}
+.c-text--companyName{
+  @include fontInformation($size:14px, $color:rgba(0,0,0,0.8), $weight:normal)
+  @include txtShadow($x:3px, $y:3px, $blur:5px, $r:0, $g:0, $b:0, $a:0.2)
+  cursor:pointer;
+}
+.c-text--companyAddress{
+  @include fontInformation($size:12px, $color:rgba(0,0,0,0.8), $weight:normal)
+  @include txtShadow($x:3px, $y:3px, $blur:5px, $r:0, $g:0, $b:0, $a:0.2)
+  cursor:pointer;
+}
+.c-text--copyRight{
+  @include fontInformation($size:12px, $color:rgba(0,0,0,0.8), $weight:normal)
+  @include txtShadow($x:3px, $y:3px, $blur:5px, $r:0, $g:0, $b:0, $a:0.2)
+  cursor:pointer;
+}
+
+.c-text--companyPhilodophy{
+  @include fontInformation($size:14px, $color:rgba(0,0,0,0.8))
+  @include txtShadow($x:3px, $y:3px, $blur:5px, $r:0, $g:0, $b:0, $a:0.2)
+  display: inline-block;
+  text-align: center;
+}
+.c-text--best{
+  @include fontInformation($size:20px, $color:rgba(0,0,0,0.8))
+  @include txtShadow($x:3px, $y:3px, $blur:5px, $r:0, $g:0, $b:0, $a:0.2)
+  text-align: center;
+}
+.c-text--companyOverview{
+  @include fontInformation($size:14px, $color:rgba(0,0,0,0.8), $lineHeight:1.5)
+  @include txtShadow($x:3px, $y:3px, $blur:5px, $r:0, $g:0, $b:0, $a:0.2)
+  text-align: center;
+}
+.c-text--message{
+  @include fontInformation($size:14px, $color:rgba(0,0,0,0.8), $lineHeight:1.5)
+  @include txtShadow($x:3px, $y:3px, $blur:5px, $r:0, $g:0, $b:0, $a:0.2)
+  text-align: center;
+}
+.c-text--companyHistory{
+  @include fontInformation($size:12px, $color:rgba(0,0,0,0.8), $lineHeight:1.5)
+  @include txtShadow($x:3px, $y:3px, $blur:5px, $r:0, $g:0, $b:0, $a:0.2)
+  text-align: center;
+}
+.c-text--contentPressRelease{
+  @include fontInformation($size:14px)
+}
+.c-text--contentIntroductionRecruit{
+  width:50%;
+}
+//responsive//
+@media (max-width:$lg){
+    .c-text--contentIntroductionRecruit{
+      width:100%;
+      margin: auto;
+    }
+    .c-text--pressRelease{
+    margin: auto;
+    width:90%;
+  }
+
+}
+@media (max-width:$md){
+  .c-text--pressRelease{
+
+}
+}

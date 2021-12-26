@@ -1,0 +1,84 @@
+.c-heading{
+  @include fontInformation($size:22px, $weight:normal, $lineHeight:1.2)
+  @include txtShadow
+  position: relative;
+}
+.c-heading--white{
+  @include fontInformation($size:22px, $color:rgba(255,255,255,0.8), $weight:normal, $lineHeight:1.2)
+  @include txtShadow( $r:255, $g:255, $b:255, $a:0.2)
+  position: relative;
+}
+
+.c-heading--companyProfile::after{
+  @include fontInformation($size:9px, $weight:normal, $lineHeight:1.2)
+  @include subHeadingInformation($subHeading:"企業情報")
+}
+.c-heading--corporateSales::after{
+  @include fontInformation($size:9px, $weight:normal, $lineHeight:1.2)
+  @include subHeadingInformation($subHeading:"法人営業部")
+}
+.c-heading--apparel::after{
+  @include fontInformation($size:9px, $weight:normal, $lineHeight:1.2)
+  @include subHeadingInformation($subHeading:"アパレル部")
+}
+.c-heading--pressRelease::after{
+  @include fontInformation($size:9px, $weight:normal, $lineHeight:1.2)
+  @include subHeadingInformation($subHeading:"プレスリリース")
+}
+.c-heading--photoLibrary::after{
+  @include fontInformation($size:9px, $color:white, $weight:normal, $lineHeight:1.2)
+  @include subHeadingInformation($subHeading:"フォトライブラリ")
+}
+.c-heading--recruit::after{
+  @include fontInformation($size:9px, $weight:normal, $lineHeight:1.2)
+  @include subHeadingInformation($subHeading:"採用情報")
+}
+.c-heading--companyProfileSub::after{
+  @include fontInformation($size:9px, $color:white, $weight:normal, $lineHeight:1.2)
+  @include subHeadingInformation($subHeading:"企業情報")
+}
+.c-heading--companyPhilosophy::after{
+  @include fontInformation($size:9px, $weight:normal, $lineHeight:1.2)
+  @include subHeadingInformation($subHeading:"経営理念")
+}
+.c-heading--companyOverview::after{
+  @include fontInformation($size:9px, $weight:normal, $lineHeight:1.2)
+  @include subHeadingInformation($subHeading:"会社概要")
+}
+.c-heading--message::after{
+  @include fontInformation($size:9px, $weight:normal, $lineHeight:1.2)
+  @include subHeadingInformation($subHeading:"代表挨拶")
+}
+.c-heading--companyHistory::after{
+  @include fontInformation($size:9px, $weight:normal, $lineHeight:1.2)
+  @include subHeadingInformation($subHeading:"会社沿革")
+}
+.c-heading--groupCompany::after{
+  @include fontInformation($size:9px, $weight:normal, $lineHeight:1.2)
+  @include subHeadingInformation($subHeading:"グループ企業")
+}
+.c-heading--contact::after{
+  @include fontInformation($size:9px, $color:rgba(255,255,255,0.8), $weight:normal, $lineHeight:1.2)
+  @include subHeadingInformation($subHeading:"お問い合わせ")
+}
+
+
+
+
+@media (max-width:$md){
+  .c-heading--companyPhilosophy{
+  font-size: 20px;
+}
+
+}
+@media (max-width:$xs){
+  .c-heading{
+    font-size: 20px;
+  }
+
+}
+@media (max-width:379px){
+  .c-heading--companyPhilosophy::after{
+    top:50px;
+  }
+}

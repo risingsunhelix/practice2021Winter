@@ -1,0 +1,36 @@
+.c-btn{
+  @include size(200px,40px)
+  border-radius: 5px;
+  cursor:pointer;
+}
+.c-btn:hover{
+  @include fontInformation($size:16px, $lineHeight:40px, $color:black, $bgColor:rgba(255,255,255,1))
+}
+
+.c-btn--white{
+  @include boxShadow($x:0, $y:0, $blur:10px, $r:255, $g:255, $b:255, $a:0.2)
+  @include fontInformation($size:16px, $lineHeight:40px, $color:black, $bgColor:rgba(255,255,255,0.8))
+}
+.c-btn--white:hover{
+  @include fontInformation($size:16px, $lineHeight:40px, $color:black, $bgColor:rgba(255,255,255,1))
+}
+.c-btn--scrollTop{
+  position:fixed;
+  bottom:40px;
+  right:20px;
+  width: 50px;
+  height: 70px;
+  background-color:#ECECEC;
+  opacity:0.4;
+  padding-top: 30px;
+  text-align: center;
+
+}
+.c-btn--pressRelease{
+  @include boxShadow($x:0, $y:0, $blur:10px, $r:255, $g:255, $b:255, $a:0.2)
+  @include fontInformation($size:14px, $lineHeight:40px, $color:rgba(255,255,255,1), $bgColor:rgba(0,0,0,0.7))
+  @include boxShadow()
+}
+.c-btn--pressRelease:hover{
+  @include fontInformation($size:14px, $lineHeight:40px, $color:rgba(255,255,255,1), $bgColor:rgba(0,0,0,1))
+}

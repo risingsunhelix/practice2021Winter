@@ -1,0 +1,125 @@
+.p-wrapper--headerSub{
+  background-color: #000000;
+}
+.p-wrapper--sns{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.p-wrapper--menu{
+  display: flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.p-wrapper-pullDownMenu{
+  width:100%;
+}
+
+.p-wrapper--titleContent {
+  font-size: 16px;
+  padding: 0px 10px 0 10px;
+  margin-bottom: 15px;
+  /* displayプロパティをnoneにしてください */
+  display: none;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.p-wrapper--titlePage {
+width:100%;
+}
+.p-wrapper--page {
+  margin:2px;
+  position:relative;
+  cursor:pointer;
+  text-align: left;
+  width:100%;
+
+}
+.p-wrapper--page span {
+  position:absolute;
+  top:-30px;
+  right:0px;
+  color:rgba(0,0,0,0.8);
+  font-size:20px;
+  line-height:4;
+  margin-right: 30px;
+}
+.p-wrapper--companyPhilosophy{
+  background-color: rgba(255,255,255,0.7);
+  width:60%;
+  margin:0 auto;
+  border-radius: 10px;
+}
+.p-wrapper--message{
+  width:80vw;
+  margin:auto;
+}
+.p-wrapper--companyHistory{
+  text-align: left;
+  width:80vw;
+  margin:auto;
+}
+.p-wrapper--pressRelease{
+  border: solid 1px rgba(0,0,0,1);
+  width:90%;
+  border-radius: 5px;
+  cursor:pointer;
+}
+.p-wrapper--pressRelease:hover{
+  background-color: rgba(0,0,0,0.05)
+}
+.p-wrapper--pressReleaseSub{
+  border: solid 1px rgba(0,0,0,1);
+  width:80%;
+  border-radius: 5px;
+  cursor:pointer;
+}
+.p-wrapper--pressReleaseSub:hover{
+  background-color: rgba(0,0,0,0.05)
+}
+.p-wrapper--titlePressReleaseChild{
+  background-image: url(img/pressReleaseChild.jpg);
+  background-size: cover;
+  background-position:bottom;
+}
+.p-wrapper--contentAndMynavi{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.p-wrapper--rowContent{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.p-wrapper--detailRecruit{
+  width:100%;
+  margin:auto;
+}
+.p-wrapper--titleContact{
+  background-image: url(img/contact.jpg);
+  background-size: cover;
+  background-position:center;
+}
+
+//responsive//
+@media (max-width:$md){
+  .p-wrapper--rowContent{
+    flex-direction: column;
+  }
+  .p-wrapper--contentAndMynavi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .p-wrapper--companyPhilosophy{
+    width:90%;
+
+  }
+  .p-wrapper--pressReleaseSub{
+    width:80%;
+  }
+}

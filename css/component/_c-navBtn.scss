@@ -1,0 +1,89 @@
+.c-navBtn{
+  background-color:rgba(255,255,255,0.8);
+  @include size(30px, 1px)
+  position: absolute;
+  left: 0;
+  -webkit-transition-duration:1600ms;
+  transition-duration:1600ms;
+  display: inline-block;
+}
+.c-navBtn:nth-child(1){
+  top:0px;
+}
+.c-navBtn:nth-child(2){
+  top:10px;
+}
+.c-navBtn:nth-child(3){
+  top:20px;
+}
+
+.c-navBtn.js-open:nth-child(1){
+  display: none;
+  -webkit-transition-duration:1600ms;
+  transition-duration:1600ms;
+}
+.c-navBtn.js-open:nth-child(2){
+  display: none;
+  -webkit-transition-duration:1600ms;
+  transition-duration:1600ms;
+}
+.c-navBtn.js-open:nth-child(3){
+  -webkit-transition-duration:1600ms;
+  transition-duration:1600ms;
+  display: none;
+}
+
+
+
+
+.c-navBtnSlide{
+  background-color:rgba(255,255,255,0.8);
+  @include size(30px, 1px)
+  position: absolute;
+  right: 0;
+  -webkit-transition: all 800ms;
+  transition: all 800ms;
+  display: inline-block;
+  z-index: 20;
+}
+.c-navBtnSlide:nth-child(1){
+  top:10px;
+  transform: rotate(45deg);
+}
+
+.c-navBtnSlide:nth-child(2){
+  top:10px;
+  transform: rotate(-45deg);
+}
+
+
+
+
+
+
+
+@media (max-width:$sm){
+  .c-navBtn{
+    @include size(25px, 1px)
+    position: absolute;
+  }
+  .c-navBtn:nth-child(1){
+    top:0px;
+  }
+  .c-navBtn:nth-child(2){
+    top:8px;
+  }
+  .c-navBtn:nth-child(3){
+    top:16px;
+  }
+
+  .c-navBtn.js-open:nth-child(1){
+    top:8px;
+  }
+  .c-navBtn.js-open:nth-child(2){
+  }
+  .c-navBtn.js-open:nth-child(3){
+
+    top:8px;
+  }
+}

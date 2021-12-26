@@ -1,0 +1,47 @@
+.p-nav{
+  width:100%;
+}
+
+.p-navSlide{
+  display: none;
+  background: rgba(0,0,0,0.8);
+  @include size(100vw, 100vh)
+  position: fixed;
+  right: -100vw;
+  top:0;
+  index:10;
+  -webkit-transition-duration: 1000ms;
+  transition-duration: 1000ms;
+}
+@media (max-width:$lg){
+  .p-navSlide{
+    display: inline-block;
+  }
+}
+.p-navSlide.js-open{
+  -webkit-transition-duration: 1000ms;
+  transition-duration: 1000ms;
+  right: 0vw;
+}
+
+.p-navBtn{
+  @include size(30px,20px)
+  position:relative;
+}
+
+@media (max-width:$sm){
+  .p-navBtn{
+    @include size(25px,16px)
+  }
+}
+
+.p-navBtnSlide{
+  @include size(100%,20px)
+  position:relative;
+}
+
+@media (max-width:$sm){
+  .p-navBtnSlide{
+    @include size(100%,16px)
+  }
+}

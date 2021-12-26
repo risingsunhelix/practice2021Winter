@@ -1,0 +1,46 @@
+.p-workBox{
+  position: relative;
+  @include boxShadow
+  z-index: 0;
+}
+.p-workBox--s {
+  @include siteImageSize(318.84px)
+}
+.p-workBox--l{
+@include siteImageSize(491.4px)
+}
+.p-workBox--iroha{
+  @include bgImage(iroha)
+}
+.p-workBox--isara{
+  @include bgImage(isara)
+}
+.p-workBox--tokyulivable{
+  @include bgImage(tokyulivable)
+}
+.p-workBox--progate{
+  @include bgImage(progate)
+}
+.p-workBox--specialist{
+  @include bgImage(specialist)
+}
+@media (max-width:$xl){
+  .p-workBox--s {
+    @include siteImageSize(26.57vw)
+  }
+  .p-workBox--l{
+  @include siteImageSize(40.95vw)
+  }
+}
+@media (max-width:$lg){
+  .p-workBox{
+    position: relative;
+    @include boxShadow
+  }
+}
+@media (max-width:$md){
+  .p-workBox--s,.p-workBox--l {
+    @include siteImageSize(90vw)
+  }
+
+}

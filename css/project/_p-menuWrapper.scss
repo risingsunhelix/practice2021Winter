@@ -1,0 +1,17 @@
+.p-menuWrapper{
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+}
+.p-menuWrapperSub{
+  display: flex;
+  justify-content:flex-end;
+  align-items: center;
+}
+.p-menuWrapper--slide{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  @include size(100%,100%)
+}
